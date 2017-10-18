@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <ProductionBuild>0</ProductionBuild>
+    <WEBKITOUTPUTDIR>$(ProjectDir)../build/vs2015</WEBKITOUTPUTDIR>
+    <WEBKITLIBRARIESDIR>$(ProjectDir)../WebKitLibraries/win</WEBKITLIBRARIESDIR>
+    <ConfigurationBuildDir>$(WebKitOutputDir)\$(Configuration)</ConfigurationBuildDir>
+    <CYGWIN>nodosfilewarning</CYGWIN>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+    <OutDir>$(ConfigurationBuildDir)\bin\</OutDir>
+    <IntDir>$(ConfigurationBuildDir)\obj\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_HAS_EXCEPTIONS=0;BUILDING_$(ProjectName);JS_NO_EXPORT;CURL_STATICLIB;LIBXML_STATIC;LIBXSLT_STATIC;PTW32_STATIC_LIB;UCONFIG_NO_COLLATION=1;U_STATIC_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4291;4244;4819;4503;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary />
+      <BufferSecurityCheck />
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ConfigurationBuildDir)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="ProductionBuild">
+      <Value>$(ProductionBuild)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WEBKITOUTPUTDIR">
+      <Value>$(WEBKITOUTPUTDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="WEBKITLIBRARIESDIR">
+      <Value>$(WEBKITLIBRARIESDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="ConfigurationBuildDir">
+      <Value>$(ConfigurationBuildDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CYGWIN">
+      <Value>$(CYGWIN)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

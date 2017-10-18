@@ -1,0 +1,43 @@
+/********************************************************************
+	Created:	2015/01/17  13:00
+	Filename: 	ChangeLog.txt
+	Author:		rrrfff
+	Url:	    http://blog.csdn.net/rrrfff
+*********************************************************************/
+
+/*
+ *	基础版本: wke 1.2, flyhigh 修改版
+ */
+http://pan.baidu.com/s/1mg0x2Og
+
+/*
+ *	拓展版本: wke 1.2, extend v1.0
+ *	编译环境: visual studio 2013 sp4, windows 8.1
+ *  [1/17/2015 ASUS]
+ */
+ 1.增加用户交互接口
+	wkeEx::ON_CONSOLE_OUTPUT、wkeEx::ON_JS_ALERT、wkeEx::ON_JS_CONFIRM、wkeEx::ON_JS_PROMPT
+ 2.增加文档加载完成事件 
+	wkeClientHandler::ON_DOCUMENT_READY
+ 3.修改事件 wkeClientHandler::ON_URL_CHANGED 返回参数
+	增强可控性, 主要用于增强对网页加载的控制
+ 4.增加 本地数据存储地址 设置接口
+	导出 wkeEx::LocalStorageDatabasePath
+ 5.增加 User-Agent 设置接口
+	导出 wkeEx::UserAgent
+ 6.实现 打开文件 对话框
+	暂不支持多选, 待测试
+ 7.修复高版本 visual studio 生成映像不正确问题, 开启编译器完全优化
+ 8.其他细节修改
+
+ /*
+  *	拓展版本: wke 1.2, extend v1.1
+  *	编译环境: visual studio 2013 sp4, windows 8.1
+  *  [1/25/2015 ASUS]
+  */
+ 1.增加初始化接口 wkeInitMainThread 和 销毁接口 jsFinalize
+	 配合 DLLLoader 和 CppMemoryModule 可实现 wke 线程间独立(不同线程拥有自己的 wke 实例, 多窗口)
+ 2.增加Cookie设置接口, 方便读写Cookie
+	 wkeSetCookieJarFileName 
+ 3.增加代理设置接口
+	 wkeSetProxyInfo

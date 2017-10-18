@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\wke\icuwin.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wke\jsBind.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wke\stringTable.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wke\wke.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wke\wkeDebug.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wke\wkePopupMenu.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wke\wkeWebView.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wke\wkeThirdpart.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\wke\wke.h">
+      <Filter>HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wke\icuwin.h">
+      <Filter>HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wke\stringTable.h">
+      <Filter>HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wke\wkeDebug.h">
+      <Filter>HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wke\wkePopupMenu.h">
+      <Filter>HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wke\wkeWebView.h">
+      <Filter>HeaderFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\wke\wkeChromeClient.inl">
+      <Filter>DependentFiles</Filter>
+    </None>
+    <None Include="..\wke\wkeContextMenuClient.inl">
+      <Filter>DependentFiles</Filter>
+    </None>
+    <None Include="..\wke\wkeDragClient.inl">
+      <Filter>DependentFiles</Filter>
+    </None>
+    <None Include="..\wke\wkeEditorClient.inl">
+      <Filter>DependentFiles</Filter>
+    </None>
+    <None Include="..\wke\wkeFrameLoaderClient.inl">
+      <Filter>DependentFiles</Filter>
+    </None>
+    <None Include="..\wke\wkeInspectorClient.inl">
+      <Filter>DependentFiles</Filter>
+    </None>
+    <None Include="..\wke\wkePlatformStrategies.inl">
+      <Filter>DependentFiles</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SourceCode">
+      <UniqueIdentifier>{102509fc-54aa-45f6-8d70-e781817b4f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeaderFiles">
+      <UniqueIdentifier>{be96fce6-d1be-435b-8171-176bf0af64df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DependentFiles">
+      <UniqueIdentifier>{1165a90b-2197-4e62-97eb-0e8df0a1f852}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\wke\wke.rc">
+      <Filter>DependentFiles</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ChangeLog.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+    <OutDir>$(ConfigurationBuildDir)\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ConfigurationBuildDir)\obj\JavaScriptCore\DerivedSources\;../Source/JavaScriptCore/;../Source/JavaScriptCore/API/;../Source/JavaScriptCore/parser/;../Source/JavaScriptCore/bytecompiler/;../Source/JavaScriptCore/dfg/;../Source/JavaScriptCore/jit/;../Source/JavaScriptCore/runtime/;../Source/JavaScriptCore/bytecode/;../Source/JavaScriptCore/interpreter/;../Source/JavaScriptCore/wtf/;../Source/JavaScriptCore/profiler;../Source/JavaScriptCore/assembler/;../Source/JavaScriptCore/debugger/;../Source/JavaScriptCore/heap/;$(WebKitLibrariesDir)\include;$(WebKitLibrariesDir)\include\private;$(ConfigurationBuildDir)\include;$(ConfigurationBuildDir)\include\JavaScriptCore;$(ConfigurationBuildDir)\include\private;$(WebKitLibrariesDir)\include\pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__STD_C;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>ICUVersion.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)$(WebKitConfigSuffix).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

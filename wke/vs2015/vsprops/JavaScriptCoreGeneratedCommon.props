@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="common.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+    <NMakeBuildCommandLine>set PATH=$(ProjectDir)\..\cygwin\bin;$(ExecutablePath);$(PATH)
+cd ..\Source\JavaScriptCore\JavaScriptCore.vcproj\JavaScriptCore
+cmd /c 
+set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)
+nmake /nologo -f JavaScriptCoreGenerated.make</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set PATH=$(ProjectDir)\..\cygwin\bin;$(ExecutablePath);$(PATH)
+cd ..\Source\JavaScriptCore\JavaScriptCore.vcproj\JavaScriptCore
+cmd /c 
+ 
+set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)
+nmake /nologo -f JavaScriptCoreGenerated.make clean
+nmake -f JavaScriptCoreGenerated.make</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>set PATH=$(ProjectDir)\..\cygwin\bin;$(ExecutablePath);$(PATH)
+cd ..\Source\JavaScriptCore\JavaScriptCore.vcproj\JavaScriptCore
+cmd /c 
+ 
+set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)
+nmake /nologo -f JavaScriptCoreGenerated.make clean</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup />
+</Project>

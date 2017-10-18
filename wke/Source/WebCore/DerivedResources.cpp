@@ -1,0 +1,6 @@
+#include "ColorData.cpp"
+#include "XPathGrammar.cpp"
+#include "InspectorFrontend.cpp"	
+#include "EventFactory.cpp"
+#include "InspectorBackendDispatcher.cpp"
+//#include "tokenizer.cpp"
